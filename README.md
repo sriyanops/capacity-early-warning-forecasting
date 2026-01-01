@@ -57,20 +57,22 @@ Key inputs include:
 ## Key Outputs
 
 ### 1. Executive PDF Report
-Generated with a single command and includes:
+Generated with a single command at runtime and includes:
 - Executive summary of top capacity risks
 - Overall demand forecast visualization
 - Capacity utilization risk tables
 - Prioritized recommended actions
 - Forecast backtest accuracy (MAE / MAPE)
 - Detailed appendix for analyst review
+> Note: The PDF report is generated dynamically and is not committed to the repository.
 
 ### 2. Structured CSV Outputs
-Saved to `outputs/` for downstream analysis:
+Generated at runtime for downstream analysis:
 - Forecasts by site and day  
 - Top-risk site listings  
 - Decision recommendations  
-- Backtest accuracy summaries (overall and by site)  
+- Backtest accuracy summaries (overall and by site)
+> Note: CSV outputs are produced during execution and are intentionally excluded from version control.
 
 ---
 
@@ -81,12 +83,6 @@ capacity_early_warning/
 ├── data/
 │   └── sample/
 │       └── daily_volume_sample.csv
-├── outputs/
-│   ├── capacity_early_warning_report.pdf
-│   ├── forecast_by_site_day.csv
-│   ├── decision_recommendations.csv
-│   ├── backtest_by_site_56d.csv
-│   └── backtest_overall_56d.csv
 ├── src/
 │   ├── load.py            # Data ingestion
 │   ├── forecast.py        # Forecasting logic
@@ -98,6 +94,7 @@ capacity_early_warning/
 ├── requirements.txt
 └── README.md
 ```
+> Note: Output files (CSVs, reports, PDFs) are generated at runtime and are intentionally not committed to the repository.
 ## How to run
 > All commands must be run from repository root.
 
