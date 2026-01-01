@@ -1,3 +1,8 @@
+__pycache__/
+outputs/
+*.pdf
+*.png
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
