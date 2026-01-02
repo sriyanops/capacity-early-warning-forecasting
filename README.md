@@ -9,7 +9,9 @@ This project is designed for operations analysts, planners, and reviewers, and r
 
 ## What This Tool Does
 
-The system ingests daily, site-level volume data and produces:
+### Problem This Tool Solves
+
+Capacity constraints are frequently identified only after demand has exceeded available resources, resulting in service delays and reactive mitigation. Forecasts and utilization metrics are often reviewed separately, limiting their usefulness for proactive planning. This tool integrates demand forecasting with capacity thresholds to provide early warning signals and actionable guidance before constraints become critical. The system ingests daily, site-level volume data and produces:
 
 - Short-horizon demand forecasts (baseline, interpretable)
 - Capacity utilization estimates by site and day
